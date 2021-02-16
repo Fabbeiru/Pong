@@ -5,6 +5,13 @@ Version of Pong using processing.
 El objetivo de esta primera práctica de la asignatura de 4to, Creación de Interfaces de Usuario (CIU), es la de diseñar e implementar una versión del conocido juego Pong usando el lenguaje de programación y el IDE llamado Processing. Este permite desarrollar código en diferentes lenguajes y/o modos, como puede ser processing (basado en Java), p5.js (basado en JavaScript), Python, entre otros.
 <p align="center"><img src="/pongGif.gif" alt="Pong using processing"></img></p>
 
+#### Controles
+Para permitir que cualquier persona que desee probar el juego pueda hacerlo, se han establecido los siguientes controles:
+- **Jugador 1:** Tecla 'W' para moverse hacia arriba y 'S' hacia abajo.
+- **Jugador 2:** Tecla 'O' o 'UP' (flecha para arriba) para moverse hacia arriba y 'L' o 'DOWN' (flecha para abajo) hacia abajo.
+
+Como se puede ver, el único requisito es disponer de un ordenador y un teclado. Se ha tenido en cuenta los casos en los que un teclado no disponga de las teclas de dirección (flechas).
+
 ## Descripción
 Aprovechando que el lenguaje de programación que utiliza el IDE Processing por defecto está basado en Java, podemos desarrollar nuestro código utilizando el paradigma de programación de "Programación Orientada a Objetos". Así pues, hemos descrito tres clases de Java:
 - **Pong:** clase principal.
