@@ -5,5 +5,4 @@ Version of Pong using processing.
 ```
 probando
 ```
-
-![Pong via processing](/pongGif.gif)
+<img style="align:center;">![Pong via processing](/pongGif.gif "Pong via processing")</img>
