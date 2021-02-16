@@ -105,3 +105,23 @@ void keyPressed() {
 }
 ```
 
+Por último, para evitar que se solapen o se produzcan errores al reproducir sonidos y/o música, usaremos "thread()", así, se ejecutará como un proceso/hilo aparte de la ejecución principal del juego. Si ponemos en el código:
+```
+thread("hit");
+thread("score");
+```
+
+Estas líneas llamaran a los siguientes métodos que, reproducirán los sonidos correspondientes.
+
+```
+void hit() {
+  hit.play();
+}
+
+void score() {
+  score.play();
+}
+```
+
+## Descarga y prueba
+Para poder probar correctamente el código, es necesario descargar todos los ficheros (los .pde y la carpeta data, esta contiene los archivos de sonido que utiliza el juego) y guardarlo en una carpeta. El archivo "README.md" es opcional, si se descarga no debería influir en el funcionamiento de código ya que, es exclusivo de la plataforma GitHub.
