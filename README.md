@@ -139,6 +139,7 @@ Para poder probar correctamente el código, es necesario descargar todos los fic
 Para la realización de esta versión de Pong, se han consultado y/o utilizado los siguientes recursos:
 * Guión de prácticas de la asignatura CIU
 * <a href="https://processing.org">Página de oficial de Processing y sus referencias y ayudas</a>
+* Processing IDE
 
 Por otro lado, las librerías empleadas fueron:
 * Sound
