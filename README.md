@@ -132,3 +132,12 @@ void score() {
 
 ## Descarga y prueba
 Para poder probar correctamente el código, es necesario descargar todos los ficheros (los .pde y la carpeta data, esta contiene los archivos de sonido que utiliza el juego) y guardarlo en una carpeta. El archivo "README.md" es opcional, si se descarga no debería influir en el funcionamiento de código ya que, es exclusivo de la plataforma GitHub.
+
+## Recursos empleados
+Para la realización de esta versión de Pong, se han consultado y/o utilizado los siguientes recursos:
+* Guión de prácticas de la asignatura CIU
+* <a href="https://processing.org">Página de oficial de Processing y sus referencias y ayudas</a>
+
+Por otro lado, las librerías empleadas fueron:
+* Sound
+* <a href="https://github.com/extrapixel/gif-animation">GifAnimation</a>
