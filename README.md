@@ -14,7 +14,7 @@ Aprovechando que el lenguaje de programación que utiliza el IDE Processing por 
 ## Explicación
 El código implementado es bastante autoexplicativo, sin embargo, con el objetivo de permitir que cualquier lector sea capaz de entender con perfección el funcionamiento del juego, se explicará a continuación en más detalle la implementación.
 
-#### Clase Pong
+### Clase Pong
 Aquí es donde inicializamos y definimos todas las variables y librerías que vamos a utilizar a lo largo de toda la implementación.
 ```
 import processing.sound.*;
@@ -80,3 +80,28 @@ void draw() {
   }
 }
 ```
+
+Como se puede ver en el fragmento de código anterior, en cada iteración que hace el bucle, dibujamos/representamos por pantalla todos los elementos visuales del juego, actualizando así su valor, forma o posición en la ventana. Lo primero que hacemos es, al iniciar la ejecución del juego, mostrar el menú del juego hasta que usando los métodos que nos permiten controlar los datos/variables de entrada como son la pulsación de las teclas del teclado o el uso del mouse, comienza el juego. Para ello, se implementan y usan los siguientes métodos:
+```
+void keyReleased() {
+  left.move(0);
+  right.move(0);
+}
+
+void keyPressed() {
+  if (key == 'w') {
+    left.move(-10);
+  } else if (key == 's') {
+    left.move(10);
+  }
+
+  if (key == 'o' || keyCode == UP) {
+    right.move(-10);
+  } else if (key == 'l' || keyCode == DOWN) {
+    right.move(10);
+  }
+  
+  if (keyCode == ENTER) menu = false;
+}
+```
+
