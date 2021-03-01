@@ -25,7 +25,7 @@ El código implementado es bastante autoexplicativo, sin embargo, con el objetiv
 
 ### Clase Pong
 Aquí es donde inicializamos y definimos todas las variables y librerías que vamos a utilizar a lo largo de toda la implementación.
-```
+```java
 import processing.sound.*;
 
 Ball ball;
@@ -44,7 +44,7 @@ boolean menu = true;
 
 La clase Pong realiza también,la función del método Main de los lenguajes de programación. Será esta entonces, la que incluya los dos métodos principales de Processing. El primero de ellos, "setup()", nos permite definir y aplicar ciertas variables y valores que serán "estáticos" a lo largo del funcionamiento de la aplicación.
 
-```
+```java
 void setup() {
   size(600, 400);
   hit = new SoundFile(this,"hit.wav");
@@ -58,7 +58,7 @@ void setup() {
 Por otra parte, el método "draw()", simula el funcionamiento de un bucle, esto es, que se irá ejecutando vez tras vez al terminar la ejecución del conjunto de comandos/órdenes dentro del mismo, a no ser que se especifique lo contrario. Por defecto, se ejecutará infinitas veces.
 Conseguimos así, las dinámicas deseadas, es decir, el efecto de movimiento de la pelota y los jugadores, refrescando constantemente la posición tanto de los jugadores como la pelota.
 
-```
+```java
 void draw() {
   if (menu) menu();
   else {
@@ -91,7 +91,7 @@ void draw() {
 ```
 
 Como se puede ver en el fragmento de código anterior, en cada iteración que hace el bucle, dibujamos/representamos por pantalla todos los elementos visuales del juego, actualizando así su valor, forma o posición en la ventana. Lo primero que hacemos es, al iniciar la ejecución del juego, mostrar el menú del juego hasta que usando los métodos que nos permiten controlar los datos/variables de entrada como son la pulsación de las teclas del teclado o el uso del mouse, comienza el juego. Para ello, se implementan y usan los siguientes métodos:
-```
+```java
 void keyReleased() {
   left.move(0);
   right.move(0);
@@ -115,14 +115,14 @@ void keyPressed() {
 ```
 
 Por último, para evitar que se solapen o se produzcan errores al reproducir sonidos y/o música, usaremos "thread()", así, se ejecutará como un proceso/hilo aparte de la ejecución principal del juego. Si ponemos en el código:
-```
+```java
 thread("hit");
 thread("score");
 ```
 
 Estas líneas llamaran a los siguientes métodos que, reproducirán los sonidos correspondientes.
 
-```
+```java
 void hit() {
   hit.play();
 }
